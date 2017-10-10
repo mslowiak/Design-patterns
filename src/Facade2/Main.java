@@ -14,9 +14,9 @@ public class Main {
         fans.add(new Fan(2));
 
         Facade facade = new Facade(fans);
+        facade.turnOn(0);
         facade.turnOn(1);
-        facade.turnOn(2);
-        facade.turnOff(2);
         facade.turnOff(1);
+        facade.turnOff(0);
     }
 }
