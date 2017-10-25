@@ -65,7 +65,7 @@ public class BuilderASCII implements Builder {
         }
 
         try {
-            PrintWriter pw = new PrintWriter("strona.html");
+            PrintWriter pw = new PrintWriter("plansza.txt");
             pw.print(sb);
             pw.close();
         } catch (FileNotFoundException e) {
