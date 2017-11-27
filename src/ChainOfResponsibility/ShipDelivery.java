@@ -20,7 +20,7 @@ public class ShipDelivery extends Delivery{
 
     @Override
     void deliver(Cargo cargo) {
-        if(this.acceptableWeight < cargo.getWeight() && !countries.contains(cargo.getCountry())){
+        if(this.acceptableWeight <= cargo.getWeight() && !countries.contains(cargo.getCountry())){
             System.out.println("Cargo will be sent by Ship");
         }else{
             super.nextDelivery.deliver(cargo);

@@ -5,7 +5,7 @@ public class CourierDelivery extends Delivery{
 
     @Override
     void deliver(Cargo cargo) {
-        if(cargo.getWeight() < this.acceptableWeight && cargo.getCountry().equals("Poland")){
+        if(cargo.getWeight() <= this.acceptableWeight && cargo.getCountry().equals("Poland")){
             System.out.println("Cargo will be send by courier");
         }else{
             super.nextDelivery.deliver(cargo);
