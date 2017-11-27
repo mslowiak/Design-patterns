@@ -21,6 +21,7 @@ public class CargoSenderAdvisor {
     }
 
     void adviseSendingWay(Cargo cargo){
+        System.out.println("\nI want to send cargo to " + cargo.getCountry() + " with weight " + cargo.getWeight());
         delivery.deliver(cargo);
     }
 }
